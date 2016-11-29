@@ -21,6 +21,7 @@ from qa import views
 urlpatterns = [
     #url(r'^$', include('qa.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.test, name = 'test'),
     url(r'^login/', views.test, name = 'test'),
     url(r'^signup/', views.test, name = 'test'),
     url(r'^question/.+/', views.test, name = 'test'),
